@@ -38,6 +38,7 @@ class _DicePageState extends State<DicePage> {
               onPressed: (){
                 setState(() {
                   leftDiceNumber = Random().nextInt(6)+1; // 1~6까지 숫자 랜덤 생성
+                  rightDiceNumber = Random().nextInt(6)+1;
                   print('diceNumber = $leftDiceNumber');
                 });
 
@@ -49,6 +50,7 @@ class _DicePageState extends State<DicePage> {
             child: FlatButton(
               onPressed: (){
                 setState(() {
+                  leftDiceNumber = Random().nextInt(6)+1; // 1~6까지 숫자 랜덤 생성
                   rightDiceNumber = Random().nextInt(6)+1;
                 });
               },
